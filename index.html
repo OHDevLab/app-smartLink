@@ -2,33 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>CulinAvI - App Link</title>
-  <script>
-    window.onload = function () {
-      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // iOS判定
-      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        window.location.href = "https://apps.apple.com/jp/app/6751627920";
-      }
-      // Android判定
-      else if (/android/i.test(userAgent)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.ohdevlab.dishedule";
-      }
-      // それ以外（PCなど）
-      else {
-        document.getElementById("links").style.display = "block";
-      }
-    };
-  </script>
+  <title>OH DevLab App Links</title>
 </head>
 <body>
-  <h1>CulinAvI storeLink</h1>
-  <p>お使いのデバイスに合わせてストアへ移動します。</p>
-
-  <div id="links" style="display:none;">
-    <p><a href="https://apps.apple.com/jp/app/6751627920">App Storeで開く（iOS）</a></p>
-    <p><a href="https://play.google.com/store/apps/details?id=com.ohdevlab.dishedule">Google Playで開く（Android）</a></p>
-  </div>
+  <h1>App Links</h1>
+  <ul>
+    <li><a href="/culinavi/">CulinAvI</a></li>
+    <li><a href="/pawwaynow/">PawwayNow</a></li>
+  </ul>
 </body>
 </html>
